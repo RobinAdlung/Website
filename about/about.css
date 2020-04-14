@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+html, body {height:100%}
+
+body {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+		background-image: url("waves.svg");
+		background-repeat:no-repeat;
+		background-position: bottom right;
+		
+	}
+
+	header {
+			z-index: 10;
+			
+	}  
+
+	.nav-container {
+		
+		background-color: white;
+		min-height: 60px;
+		border-bottom: solid black;
+		border-width: thin;
+	} 
+
+
+	.nav-bar ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		list-style-type: none;
+		padding:0;
+		margin: 0;
+		min-height: 60px;
+	} 
+
+	.nav-bar ul li a {
+		margin: 50px;
+		padding-left: 40px;
+		font-family: Roboto;
+		text-decoration: none;
+		color: #707070;
+		font-size: 15pt;
+		font-weight: 300;
+		text-transform: uppercase;
+		filter: blur(0px);
+	} 
+
+	.nav-bar ul li a:hover {
+		font-weight: 400;
+		color: black;
+	}
+
+	.about {
+		font-weight: 700!important;
+		color:#F5B828!important;
+	}
+
+	.toggle-menu {
+		display: none;
+	}
+
+	.toggle-up-icon {
+		display: none;
+	}
+
+	.toggle-down-icon {
+		display: none;
+	}
+
+	.wortmarke {
+		position: relative;
+		float: left;
+		width: 200px;
+		min-height: 60px;
+		padding-left: 10%;
+		z-index: 10;
+	} 
+
+@media (max-width: 1015px) {
+	.nav-bar {display: none;} 
+	
+	.nav-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	} 
+	
+	.toggle-down-icon {
+		width: 2em;
+		display: block;
+		cursor: pointer;
+		padding-left: 10%;
+		position: relative;
+		z-index: 10;
+	}
+
+	.toggle-up-icon {
+		width: 2em;
+		display: none;
+		cursor: pointer;
+		padding-left: 10%;
+		position: relative;
+		z-index: 10;
+	}	
+	
+	.toggle-menu {
+		display: none;
+		background-color: #292929;
+	}
+	
+	.toggle-menu ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+	}
+	
+	.toggle-menu ul li {
+		padding: 20px 0px;
+	}	
+
+	.toggle-menu ul li a {
+		text-align: center;
+		font-family: Roboto;
+		text-decoration: none;
+		color: white;
+		font-size: 15pt;
+		font-weight: 300;
+		text-transform: uppercase;
+		filter: blur(0px);
+		
+	}
+	
+	.toggle-menu ul li a:hover {
+	   	font-weight: 400;
+		color: white;
+	}
+	
+}
+
+
+
+
+/* CSS for profile */
+
+.profile {
+	position: absolute;
+	width: 25%;
+	right: 400px;
+	top: 150px;
+	overflow: hidden;
+}
+
+.profile_mobile {
+		display: none;
+	}
+
+/* CSS for introduction text */
+
+.intro {
+	padding: 5% 55% 10% 10%;
+}
+
+.intro h1 {
+	font-family: "Roboto Condensed", "sans-serif";
+	font-size: 50pt;
+	font-weight: 300;
+	line-height: 0.5;
+}
+
+.intro p {
+	font-family: "Roboto", "sans-serif";
+	font-size: 18pt;
+	font-weight: 300;
+}
+
+.not {
+	text-decoration: line-through;
+}
+
+.intro span {
+	font-family: "Roboto", "sans-serif";
+	font-size: 18pt;
+	font-weight: 300;
+}
+
+.panda {
+	width:30px;
+	margin: 5px 5px 0px 5px;
+}
+
+@media (max-width:1500px) {
+	
+	
+
+	
+	.profile {
+		right: 25%;
+	}
+	
+	.intro {
+		padding: 5% 50% 10% 10%;
+	}
+}
+
+
+@media (max-width:1150px) {
+	html, body {height: auto}
+	
+	.profile {
+		display: none;
+	}
+	
+	.profile_mobile {
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		padding-top: 50px;
+	}
+	
+	.intro {
+		padding: 0 20% 70% 5%;
+	}
+}
+
+@media (max-width:1150px) {
+	.intro {
+		padding: 0 20% 130% 5%
+	}
+	
+	.intro h1 {
+		line-height: 1;
+		font-size: 30pt;
+	}
+}
+
+@media (max-width:500px) {
+	.intro {
+		padding: 0 5% 200% 5%;
+	}
+	
+	.intro h1 {
+		line-height: 1;
+		font-size: 30pt;
+	}
+	
+	.intro p, .intro span {
+		line-height: 1.5;
+		font-size: 15pt;
+	}
+	
+	.panda {
+		text-align: center;
+	}
+	
+	
+}
+
+	
