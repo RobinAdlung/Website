@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>robinadlung.com</title>
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ff0000">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="index.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="javascript/owl.carousel.min.js"></script>
+<script src="javascript/jquery.mousewheel.min.js"></script>
+<script src="javascript/toggle.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:300,400&display=swap" rel="stylesheet">
+	
+<style>
+/* CSS for carousel */
+
+	html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+	background: transparent; } /* Optional: just make scrollbar invisible */
+	/* to adjust the whole stages width*/
+	.owl-carousel .owl-stage-outer {
+		width: 100%;
+		overflow:visible!important;
+	}
+
+	.title {
+		margin: 0;
+		padding: 10px 0% 10px 10%;
+		font-family: "Roboto Condensed", "sans-serif";
+		font-size: 3vw;
+		text-transform: uppercase;
+		color:white;
+		text-shadow: -1px 0 #707070, 0 1px #707070, 1px 0 #707070, 0 -1px #707070;
+
+	}
+/* to make the banner responsive */
+	
+	.item img {
+		display: inline;
+		max-width: 55%;
+		height: auto;
+		padding-left: 20%;
+		margin: 0;
+	}
+	
+@media (max-width: 800px) {
+	.item img {
+		max-width: 100%;
+		height: auto;
+		padding-left: 0;
+	}
+
+	.nav {
+		display: none;
+	}
+}
+
+/* to adjust position of the nav arrows*/
+	.owl-prev{
+		position: absolute;
+		left:  10%;
+		top: 40%;
+		height: 50px;
+		width: 50px;
+	}
+	
+	.owl-next{
+		position: absolute;
+		right: 10%;
+		top: 40%;
+		height: 50px;
+		width: 50px;	
+	}
+
+/* for all text on the banner*/
+	.textoverlay {
+		position:absolute;
+		left:50%;
+		top: 80%;
+    	color:#000;
+    	display:block;
+	}
+	
+	
+	.textoverlay h1 {
+		font-family: "Roboto Condensed", "sans-serif";
+		font-size: 3vw;
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+	.textoverlay p {
+		font-family: "Roboto Condensed", "sans-serif";
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 2vw;
+		margin: 0;
+		padding: 0;
+	}
+
+/* comment container out or in and apply div to HTML/body/items */
+	.container {
+ 		background-color: rgba(255, 255, 255, .15);  
+ 		backdrop-filter: blur(25px);
+	}
+
+/* make banner text responsive */
+@media (max-width: 800px) {
+	.textoverlay {
+		left: 5%;
+		top: 100%;
+	}	
+	
+	.textoverlay h1 {
+		font-size: 10vw;
+	}
+	
+	.textoverlay p {
+		font-size: 6vw;
+	}
+	
+	.owl-dots {
+		padding-top: 200px;	
+	}
+	
+	/* make banner text background invisible */
+	.container {
+		background-color: transparent;
+		backdrop-filter: none;
+	}
+	
+	/* resize background panda */
+	body {
+		background-position: 150% 300px;
+		background-size: 30em;
+	}
+	
+	.title {
+		text-align: center;
+		padding: 10px 5px 30px 5px;
+		font-size: 25pt;
+	}
+}
+</style>
+</head>
+
+<body>
+	
+	<!--- Welcome Screen --->
+	<div id="welcome" class="welcome">
+		<div class="content-wrap">
+			<div class="opener1"><p>Hi</p></div>
+			<div class="opener2"><p>I am</p><img class="RA_opener" alt="Robin Adlung" src="images/logo/Robin Adlung_Wortmarke.svg"></div>
+			<div class="opener3"><p>Have fun on my page!</p></div> 
+		</div>
+	</div>
+	<script type="text/javascript">
+		
+		if (localStorage.getItem("welcome") === null) {
+			setTimeout(
+				localStorage.setItem("welcome", "true")
+				, 4000);
+		}
+		
+		else {
+		
+		var hide = document.getElementById("welcome");
+		hide.classList.add("content-hidden");
+		
+		}
+	</script>
+	
+	
+	<!--- Nav-Bar --->
+	
+	<header>
+		<div class="nav-container">
+			<a href="index.html"><img class="wortmarke" src="images/logo/Robin Adlung_Wortmarke.svg" alt="Robin Adlung"></a>
+			<img class="toggle-down-icon" id="togglebtn" src="images/nav/toggle_down_icon.svg" alt="toggle down">
+			<img class="toggle-up-icon" id="toggleupbtn" src="images/nav/toggle_up_icon.svg" alt="toggle down">
+			<div class="nav-bar">
+				<ul>
+					<li><a class="allprojects" href="illustration/illustration.html">All Projects</a></li>
+					<li><a class="contact" href="contact/contact.html">Contact</a></li>
+					<li><a class="about" href="about/about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="toggle-menu" id="togglemenu">
+			<ul>
+				<li><a class="allprojects" href="illustration/illustration.html">All Projects</a></li>
+				<li><a class="contact" href="contact/contact.html">Contact</a></li>
+				<li><a class="about" href="about/about.html">About</a></li>
+			</ul>
+		</div>
+	</header> 
+	
+	<!--- Carousel --->
+	
+	
+	<h1 class="title">Hightlights | News</h1>
+	<div class="owl-carousel owl-theme">
+		
+		<div class="item"> 
+			<div class="textoverlay">
+				<div class="container">
+				<h1 class="shapesans">New Typeface</h1>
+				<p>graphic and poster | typographic project</p>
+				</div>
+			</div>
+			<a href="graphic+poster/shape_sans/shape_sans.html"><img alt="Banner2" src="images/banner/banner_shape_sans.png"></a>
+		</div>
+		
+		<div class="item">
+			<div class="textoverlay">
+				<div class="container">
+				<h1>Lost</h1>
+				<p>Motion Design | Anime Music Video</p>
+				</div>
+			</div>
+			
+			<a href="#"><img alt="Banner1" src="images/banner/banner_lost.png"></a>
+		</div>
+		
+		<div class="item"> 
+			<div class="textoverlay">
+				<h1>Title</h1>
+				<p>illustration | digital painting</p>
+			</div>
+			<a href="#"><img alt="Banner2" src="images/banner/banner_dummy.png"></a>
+		</div>
+		
+	</div>
+	
+	
+	
+
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$(".owl-carousel").owlCarousel({
+					items: 1,
+					autoWidth: false,
+					center:true,
+					loop:true,
+					autoplay:true,
+					autoplayHoverPause:true,
+					margin:800,
+					nav:true,
+					navText: ['<img class="nav" src="images/nav/prev.png">','<img class="nav" src="images/nav/next.png">'],
+					dots:true,
+					smartSpeed:2000
+				});
+			});
+			var owl = $('.owl-carousel');
+				owl.on('mousewheel', '.owl-stage', function(e) {
+				   if (e.deltaY > 0) {
+					  owl.trigger('prev.owl');
+				   } else {
+					  owl.trigger('next.owl');
+				   }
+			   e.preventDefault();
+			});
+		
+			
+	</script>
+	
+	
+</body>
+</html>
