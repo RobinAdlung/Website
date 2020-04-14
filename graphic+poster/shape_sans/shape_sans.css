@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@font-face {
+	src:url("shapesans/ShapeSans-Regular.ttf");
+	font-family: ShapeSansReg;
+}
+
+
+
 ::-moz-selection { /* Code for Firefox */
   color: white;
   background: black;
@@ -270,7 +277,7 @@ span {
 
 .editcontent1 {
 	width: 90%;
-	font-family: "Shape Sans";
+	font-family: "ShapeSansReg";
 	font-weight: normal;
 	font-size: 80pt;
 	line-height: 100px;
@@ -585,6 +592,8 @@ grid-row-gap: 20px;
 		top: 2900px;
 	}
 }
+
+
 
 /* footer */
 	
