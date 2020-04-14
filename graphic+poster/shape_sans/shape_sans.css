@@ -5,7 +5,10 @@
 	font-family: ShapeSansReg;
 }
 
-
+@font-face {
+	src:url(""shapesans/ShapeSans-Light.ttf"");
+	font-family: ShapeSansLight;
+}
 
 ::-moz-selection { /* Code for Firefox */
   color: white;
@@ -296,7 +299,7 @@ span {
 
 .editcontent2 {
 	width: 90%;
-	font-family: "Shape Sans";
+	font-family: "ShapeSansLight";
 	font-weight: lighter;
 	font-size: 80pt;
 	line-height: 100px;
