@@ -1,0 +1,3 @@
+all thumbnails are
+resized to 320px to ensure short loading times.
+
