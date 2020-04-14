@@ -570,6 +570,22 @@ grid-row-gap: 20px;
 	}
 }
 
+@media (max-width: 450px){
+	.download-prlx {
+		width: 70%;
+		left: 20px;
+		top: 3200px;
+	}
+}
+
+@media (max-width: 400px){
+	.download-prlx {
+		width: 70%;
+		left: 20px;
+		top: 2900px;
+	}
+}
+
 /* footer */
 	
 	.footer {
